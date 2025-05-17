@@ -6,6 +6,14 @@
 #### 1. **_"Total controllability analysis discovers explainable drugs for Covid-19 therapy and prevention." Wei et al._**
 #### 2. **_"Identification of cancer keeping genes as therapeutic targets by finding network control hubs." Zhang et al._**
 
+### Python implementation:
+The `py` directory contains a Python reimplementation with equivalent functionality.
+The modules expose an API compatible with `networkx` graphs and can also read
+Pajek ``.net`` files. Run the demo with:
+
+```bash
+PYTHONPATH=py python3 py/main/demo.py
+```
 ### Project explanation:
 #### 1. "/src/main"
 The path "/src/main" is the main function of the code, which provides "node_classification","sensitive_control_hub" and "control_scheme" function.
