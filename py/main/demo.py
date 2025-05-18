@@ -1,6 +1,11 @@
 """Example script demonstrating the Python API."""
 
-from control_package import NodeClassification, FindSensitiveControlHub, ControlSchemes
+from control_package import (
+    NodeClassification,
+    FindSensitiveControlHub,
+    ControlSchemes,
+    ControlHubValidator,
+)
 
 try:
     import networkx as nx  # type: ignore
@@ -27,6 +32,9 @@ def main():
         g.add_edge(4, 3)
         g.add_edge(4, 5)
         ControlSchemes(graph=g, output_file="./result/scheme_from_nx.txt")
+
+    # validate control hubs on the BLCA network using an Ollama model
+    ControlHubValidator("./net/blca.net")
 
 
 if __name__ == "__main__":

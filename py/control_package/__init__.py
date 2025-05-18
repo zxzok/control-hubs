@@ -5,6 +5,7 @@ from .edge import Edge
 from .node_classification import NodeClassification
 from .find_sensitive_control_hub import FindSensitiveControlHub
 from .control_schemes import ControlSchemes
+from .control_hub_validator import ControlHubValidator
 
 __all__ = [
     "Node",
@@ -12,4 +13,5 @@ __all__ = [
     "NodeClassification",
     "FindSensitiveControlHub",
     "ControlSchemes",
+    "ControlHubValidator",
 ]
